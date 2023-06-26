@@ -10,6 +10,6 @@ import java.util.List;
 @Mapper
 public interface MainDAO {
 
-    public int peopleList();
+    public List<Person> peopleList();
 
 }

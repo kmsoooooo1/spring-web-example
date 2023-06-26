@@ -22,6 +22,14 @@ public class mainController {
 
         System.out.println("JSP 실행");
 
-        return Integer.toString(service.selectPerson());
+        List<Person> list = service.selectPerson();
+
+        String name = "";
+
+        for (Person p : list){
+            name += p.getFirst_name() + " " + p.getLast_name() + "<br>";
+        }
+
+        return name;
     }
 }

@@ -15,16 +15,16 @@ public class MainServiceImpl implements MainService {
     @Autowired
     MainDAO dao;
     @Override
-    public int selectPerson() {
+    public List<Person> selectPerson() {
 
-        int totSize = 0;
+        List<Person> list = null;
 
         try{
-            totSize = dao.peopleList();
+            list = dao.peopleList();
         }catch(Exception e){
             e.printStackTrace();
         }
 
-        return totSize;
+        return list;
     }
 }

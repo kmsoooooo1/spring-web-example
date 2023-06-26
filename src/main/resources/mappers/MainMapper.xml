@@ -5,8 +5,10 @@
 
 <mapper namespace="com.springweb.example.dao.MainDAO">
 <!--    <select id="peopleList" resultType="com.springweb.example.dto.Person">-->
-    <select id="peopleList" resultType="Integer">
-        SELECT COUNT(*)
+    <select id="peopleList" resultType="com.springweb.example.dto.Person">
+        SELECT person_id
+             , first_name
+             , last_name
           FROM PEOPLE
     </select>
 </mapper>

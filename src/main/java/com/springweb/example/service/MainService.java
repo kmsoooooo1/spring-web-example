@@ -7,6 +7,6 @@ import java.util.List;
 
 public interface MainService {
 
-    int selectPerson();
+    List<Person> selectPerson();
 
 }
